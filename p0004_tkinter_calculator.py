@@ -1,25 +1,28 @@
-from tkinter import *
-expr = ""  # Global expression string
 
-def press(key):
-    global expr
-    expr += str(key)
-    display.set(expr)
+# * Write a Calculator program using the tkinter GUI
+
+from tkinter import *
+
+expression = ""  
+
+def press(keystroke):
+    global expression
+    expression += str(keystroke)
+    display.set(expression)
 
 def equal():
-    global expr
+    global expression
     try:
-        result = str(eval(expr))
+        result = str(eval(expression))
         display.set(result)
-        expr = ""
+        expression = ""
     except:
         display.set("error")
-        expr = ""
+        expression = ""
 
 def clear():
-    global expr
-    
-    expr = ""
+    global expression
+    expression = ""
     display.set("")
 
 if __name__ == "__main__":
