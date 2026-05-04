@@ -47,12 +47,12 @@ def determine_calculation(answer):
     return input(f"Type 'y' to continue calculating with {answer}, type 'n' to start a new calculation or type 'q' to quit: ").lower()    
 
 while True:
-    current_calculation = determine_calculation(answer)
-    if current_calculation == "y":
+    curr_calculation = determine_calculation(answer)
+    if curr_calculation == "y":
         answer = ongoing_calculation(answer)
-    elif current_calculation == "n":
+    elif curr_calculation == "n":
         answer = new_calculation()
-    elif current_calculation == "q":
+    elif curr_calculation == "q":
         break   
     
 print("Thanks for using my Calculator - Goodbye!")
