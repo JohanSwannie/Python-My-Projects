@@ -15,7 +15,7 @@ print("Use my simple Calculator")
 print("1 = Add | 2 = Subtract | 3 = Multiply | 4 = Divide")
 
 while True:
-   choice = int(input("Choose operation - 1 | 2 | 3 | 4   "))
+   choice = int(input("Choose your operation - 1 | 2 | 3 | 4   "))
    if choice == 1 or choice == 2 or choice == 3 or choice == 4:
       break
    
