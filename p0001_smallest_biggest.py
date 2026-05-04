@@ -6,7 +6,7 @@ import math
 
 numbers_list = []
 
-for _ in range(100):
+for _ in range(50):
    number = randint(1, 250)
    numbers_list.append(number)
    
